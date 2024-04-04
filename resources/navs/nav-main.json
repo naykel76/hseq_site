@@ -7,6 +7,11 @@
         "exclude_route": true
       },
       {
+        "name": "Services",
+        "url": "/#services",
+        "exclude_route": true
+      },
+      {
         "name": "Contact",
         "route_name": "contact",
         "exclude_route": true

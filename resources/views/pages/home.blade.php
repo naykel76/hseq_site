@@ -1,8 +1,11 @@
 <x-gt-app-layout layout="{{ config('naykel.template') }}" class="py-5-3-2-2">
 
-    <section>
-        <img src="{{ asset('images/hero.jpg') }}" alt="">
-    </section>
+    <x-slot name="top">
+        <section class="flex va-c bg-neutral-100 tac">
+            <img src="{{ asset('images/hero.jpg') }}">
+            <div class="txt-4 px-4">Safer Workplaces, Streamlined Processes</div>
+        </section>
+    </x-slot>
 
     <section class="py-3">
         <div class="container">
@@ -39,7 +42,7 @@
 
     <section class="py-3 bg-gray-100">
         <div class="container">
-            <h2 class="tac txt-3">OUR SERVICES</h2>
+            <h2 id="services" class="tac txt-3">OUR SERVICES</h2>
             <div class="grid-3 cols-3">
                 <x-box image="consulting-services.jpg" alt="consulting services">
                     <x-slot name="title">CONSULTING <br> SERVICES</x-slot>
