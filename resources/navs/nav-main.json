@@ -5,6 +5,11 @@
         "name": "Home",
         "route_name": "home",
         "exclude_route": true
+      },
+      {
+        "name": "Contact",
+        "route_name": "contact",
+        "exclude_route": true
       }
     ]
   },
