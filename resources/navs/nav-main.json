@@ -8,7 +8,7 @@
       },
       {
         "name": "Services",
-        "url": "/#services",
+        "url": "home/#services",
         "exclude_route": true
       },
       {

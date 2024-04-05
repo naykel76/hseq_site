@@ -10,6 +10,8 @@ use Naykel\Gotime\RouteBuilder;
 |
 */
 
+Route::redirect('/home', '/');
+
 Route::get('/', function () {
     return view('pages.home');
 })->name('home');

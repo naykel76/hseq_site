@@ -33,6 +33,23 @@
         {{ $bottom }}
     @endisset
 
-    @includeFirst(['components.layouts.partials.footer', 'gotime::components.layouts.partials.footer'])
+    <footer class="nk-footer">
+        <div class="container py-3">
+            <div class="flex space-between">
+                <p>Copyright © <?php echo date('Y'); ?> HSEQ Compliance Solutions - All Rights Reserved.</p>
+                <p>Design and Hosting by <a class="txt-muted fw6" href="https://naykel.com.au"
+                        target="_blank">NAYKEL</a></p>
+            </div>
+        </div>
+    </footer>
+    {{-- <footer class="nk-footer">
+        <div class="container py-2">
+            <div class="tac">
+                <p>Copyright © <?php echo date('Y'); ?> HSEQ Compliance Solutions - All Rights Reserved.</p>
+                <small>Design and Hosting by <a class="txt-muted fw6" href="https://naykel.com.au"
+                        target="_blank">NAYKEL</a></small>
+            </div>
+        </div>
+    </footer> --}}
 
 </x-gt-app-layout>
