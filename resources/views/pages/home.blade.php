@@ -7,7 +7,40 @@
     </x-slot>
     <section class="py-3">
         <div class="container">
-            <h2 class="tac txt-3">WORKING TOGETHER</h2>
+            <div class="grid cols-3">
+                <div class="bx dark">
+                    <div class="bx-title">CORE VALUES</div>
+                </div>
+                <div class="bx">
+                    <div class="bx-title">Health and Safety</div>
+                    <div class="bx-content">We show concern and actively care about our clients.</div>
+                </div>
+                <div class="bx">
+                    <div class="bx-title">Integrity</div>
+                    <div class="bx-content">We are open and honest in what we say and what we do.</div>
+                </div>
+                <div class="bx">
+                    <div class="bx-title">Quality</div>
+                    <div class="bx-content">What we do, we do well. We are passionate about achieving success for our
+                        customers. We seek proactive solutions and focus on continuous improvement.</div>
+                </div>
+                <div class="bx">
+                    <div class="bx-title">Collaboration</div>
+                    <div class="bx-content">We leverage of each other to work as a team in a cooperative, supportive,
+                        and
+                        friendly environment.</div>
+                </div>
+                <div class="bx">
+                    <div class="bx-title">Loyalty</div>
+                    <div class="bx-content">We develop long term relationships by earning respect and trust. We are
+                        dependable, take ownership and work for the company as our own.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-3">
+        <div class="container">
+            <h2 class="tac txt-2.5">WORKING TOGETHER</h2>
             <div class="grid-3 lg:cols-3">
                 <x-box image="refining-factory.jpg" alt="refining factory">
                     <x-slot name="title">Mission</x-slot>
@@ -37,10 +70,9 @@
             </div>
         </div>
     </section>
-
-    <section class="py-3 bg-gray-100">
+    <section class="py-3 bg-gray-1000">
         <div class="container">
-            <h2 id="services" class="tac txt-3">OUR SERVICES</h2>
+            <h2 id="services" class="tac txt-2.5">OUR SERVICES</h2>
             <div class="grid-3 lg:cols-3">
                 <x-box image="consulting-services.jpg" alt="consulting services">
                     <x-slot name="title">CONSULTING <br> SERVICES</x-slot>
@@ -54,7 +86,7 @@
                         <li>Contractor Management Services</li>
                     </ul>
                 </x-box>
-                <x-box image="exemplar-global.png" alt="exemplar global">
+                <x-box image="exemplar.png" alt="exemplar global">
                     <x-slot name="title">ASSURANCE <br> SERVICES</x-slot>
                     <ul class="tal">
                         <li>Development, implementation and execution of Audit and inspection criteria</li>
@@ -80,9 +112,30 @@
             </div>
         </div>
     </section>
-
     <section class="py-3">
         <div class="container">
+            <div class="flex gap-5">
+                <div class="fs0">
+                    <img class="wh-20" src="{{ asset('images/jade-stephens.jpg') }}" alt="Jade Stephens">
+                </div>
+                <div>
+                    <h2 id="about" class="txt-2.5">ABOUT US</h2>
+                    <p>We are a dedicated HSEQ Compliance company which provides consulting and contracting services to
+                        the Civil and Mining industries across Australia.</p>
+                    <p>The owner Jade Stephens, has an extensive behavioural management background trained in NLP and
+                        CBT. Jade is also very experienced within statistical analysis and successfully developing and
+                        implementing ISO and Federal Safety systems.</p>
+                    <p>We also provide investigation services including Basic all the way through to formal ICAM
+                        investigation reports.</p>
+                    <p>Although our fingerprint services spread across several different industries, we strive for the
+                        same goal everywhere we go: Keep it simple and to the point.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-3 bg-gray-1000">
+        <div class="container">
+            <h2 class="tac txt-2.5">WHAT OTHERS ARE SAYING</h2>
             <div class="grid lg:cols-3">
                 <div class="bx">
                     <p>"HSEQ Compliance Solutions helped us streamline our processes and create a safer workplace. Their

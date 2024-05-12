@@ -9,7 +9,7 @@
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
         "naykel/contactit": "^2.1",
-        "naykel/gotime": "dev-v1-rebuild#1f91c3c"
+        "naykel/gotime": "dev-v1-rebuild#1027620"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

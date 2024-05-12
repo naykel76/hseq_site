@@ -12,6 +12,11 @@
         "exclude_route": true
       },
       {
+        "name": "About",
+        "url": "home/#about",
+        "exclude_route": true
+      },
+      {
         "name": "Contact",
         "route_name": "contact",
         "exclude_route": true
