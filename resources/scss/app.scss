@@ -1,12 +1,53 @@
-@use "node_modules/nk_jtb/src/variables" as * with(
-    $preferred-fonts: Montserrat,
-    $primary: #000000,
-    $secondary: #13ad3a
-);
+@use "node_modules/nk_jtb/src/variables" as * with($preferred-fonts: Montserrat, $primary: #000000, $secondary: #13ad3a);
 
+@use "node_modules/nk_jtb/src/mixins/media" as *;
 @use "node_modules/nk_jtb/src/jtb";
 
 .navbar :where(ul a).active,
 .navbar :where(ul a):active {
     color: #c4c4c4;
 }
+
+$img-path: "../../public/images/samples";
+
+.hero {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding-block: 10rem;
+
+    .title {
+        color: $hero-title-color;
+        font-size: $hero-title-sm;
+        @include from-md {
+            font-size: 3.5rem;
+            line-height: 1.2;
+        }
+    }
+    .subtitle {
+        color: $hero-subtitle-color;
+        font-size: $hero-subtitle-sm;
+        @include from-md {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.fp-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-sm.jpg");
+
+    @include from-md {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-md.jpg");
+    }
+
+    @include from-lg {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-lg.jpg");
+    }
+
+    @include from-xxl {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-xl.jpg");
+    }
+}
+
+// ("../../public/images/content/hero-sm.jpg");

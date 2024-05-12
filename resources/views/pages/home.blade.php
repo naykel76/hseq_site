@@ -1,15 +1,18 @@
-<x-gt-app-layout layout="{{ config('naykel.template') }}">
+<x-gt-app-layout layout="{{ config('naykel.template') }}" class="zebra">
     <x-slot name="top">
-        <section class="flex va-c bg-neutral-100 tac">
-            <img src="{{ asset('images/hero.jpg') }}">
-            <div class="txt-4 px-4">Safer Workplaces, Streamlined Processes</div>
+        <section class="hero fp-hero">
+            <div class="container-md tac py-5 space-y">
+                <div class="title">Safer Workplaces, Streamlined Processes</div>
+                <div class="subtitle">Ensuring Your Safety Meeting Obligations for a Safer Work Environment</div>
+                <div class="btn teal">Find Out</div>
+            </div>
         </section>
     </x-slot>
-    <section class="py-3">
+    <section class="py-5">
         <div class="container">
             <div class="grid cols-3">
-                <div class="bx dark">
-                    <div class="bx-title">CORE VALUES</div>
+                <div class="bx dark flex ha-c va-c">
+                    <div class="bx-title txt-2">CORE VALUES</div>
                 </div>
                 <div class="bx">
                     <div class="bx-title">Health and Safety</div>
@@ -38,7 +41,7 @@
             </div>
         </div>
     </section>
-    <section class="py-3">
+    <section class="py-5">
         <div class="container">
             <h2 class="tac txt-2.5">WORKING TOGETHER</h2>
             <div class="grid-3 lg:cols-3">
@@ -70,7 +73,7 @@
             </div>
         </div>
     </section>
-    <section class="py-3 bg-gray-1000">
+    <section class="py-5 bg-gray-1000">
         <div class="container">
             <h2 id="services" class="tac txt-2.5">OUR SERVICES</h2>
             <div class="grid-3 lg:cols-3">
@@ -112,7 +115,7 @@
             </div>
         </div>
     </section>
-    <section class="py-3">
+    <section class="py-5">
         <div class="container">
             <div class="flex gap-5">
                 <div class="fs0">
@@ -133,7 +136,7 @@
             </div>
         </div>
     </section>
-    <section class="py-3 bg-gray-1000">
+    <section class="py-5 bg-gray-1000">
         <div class="container">
             <h2 class="tac txt-2.5">WHAT OTHERS ARE SAYING</h2>
             <div class="grid lg:cols-3">
@@ -160,5 +163,4 @@
             </div>
         </div>
     </section>
-
 </x-gt-app-layout>
