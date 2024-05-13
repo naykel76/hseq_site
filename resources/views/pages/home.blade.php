@@ -1,14 +1,14 @@
 <x-gt-app-layout layout="{{ config('naykel.template') }}" class="zebra">
     <x-slot name="top">
         <section class="hero fp-hero">
-            <div class="container-md tac py-5 space-y">
+            <div class="container-md tac py-5 md:py-3 space-y">
                 <div class="title">Safer Workplaces, Streamlined Processes</div>
                 <div class="subtitle">Ensuring Your Safety Meeting Obligations for a Safer Work Environment</div>
-                <div class="btn teal">Find Out</div>
+                <a href="/contact" class="btn lg white outline">Find Out More</a>
             </div>
         </section>
     </x-slot>
-    <section class="py-5">
+    {{-- <section class="py-5 md:py-3">
         <div class="container">
             <div class="grid cols-3">
                 <div class="bx dark flex ha-c va-c">
@@ -40,8 +40,8 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="py-5">
+    </section> --}}
+    <section class="py-3 lg:py-5">
         <div class="container">
             <h2 class="tac txt-2.5">WORKING TOGETHER</h2>
             <div class="grid-3 lg:cols-3">
@@ -58,22 +58,20 @@
                         always the interests of our clients. We provide capability, scalability and clear pathways to
                         complete projects.</p>
                 </x-box>
-                <x-box image="jade-stephens.jpg" alt="jade stephens">
-                    <x-slot name="title">About</x-slot>
-                    <p> We are a specialised and accredited Safe Systems of Work company with over 18 years of
-                        experience in developing, implementing and auditing. We specialise: </p>
+                <x-box image="servicing.jpg" alt="servicing">
+                    <x-slot name="title">Servicing</x-slot>
                     <ul class="tal">
                         <li>Underground mining</li>
                         <li>Surface mining</li>
                         <li>Civil construction</li>
-                        <li>Building construction services and,</li>
-                        <li>New and existing projects. </li>
+                        <li>Building construction services</li>
+                        <li>New and existing projects</li>
                     </ul>
                 </x-box>
             </div>
         </div>
     </section>
-    <section class="py-5 bg-gray-1000">
+    <section class="py-5 md:py-3 bg-gray-1000">
         <div class="container">
             <h2 id="services" class="tac txt-2.5">OUR SERVICES</h2>
             <div class="grid-3 lg:cols-3">
@@ -115,11 +113,12 @@
             </div>
         </div>
     </section>
-    <section class="py-5">
+    <section class="py-5 md:py-3">
         <div class="container">
-            <div class="flex gap-5">
+            {{-- fix gap --}}
+            <div class="flex-col md:flex-row gap-2 md:gap-5">
                 <div class="fs0">
-                    <img class="wh-20" src="{{ asset('images/jade-stephens.jpg') }}" alt="Jade Stephens">
+                    <img class="wh-20 rounded-1" src="{{ asset('images/jade-stephens.jpg') }}" alt="Jade Stephens">
                 </div>
                 <div>
                     <h2 id="about" class="txt-2.5">ABOUT US</h2>
@@ -136,7 +135,7 @@
             </div>
         </div>
     </section>
-    <section class="py-5 bg-gray-1000">
+    <section class="py-5 md:py-3 bg-gray-1000">
         <div class="container">
             <h2 class="tac txt-2.5">WHAT OTHERS ARE SAYING</h2>
             <div class="grid lg:cols-3">

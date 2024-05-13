@@ -8,7 +8,13 @@
     color: #c4c4c4;
 }
 
-$img-path: "../../public/images/samples";
+@include from-md {
+    .md\:gap-5 {
+        gap: 5rem;
+    }
+}
+
+$img-path: "../../public/images";
 
 .hero {
     background-repeat: no-repeat;
@@ -35,19 +41,20 @@ $img-path: "../../public/images/samples";
 }
 
 .fp-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-sm.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-xl.jpg");
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-sm.jpg");
 
-    @include from-md {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-md.jpg");
-    }
+    // @include from-md {
+    //     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-md.jpg");
+    // }
 
-    @include from-lg {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-lg.jpg");
-    }
+    // @include from-lg {
+    //     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-lg.jpg");
+    // }
 
-    @include from-xxl {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-xl.jpg");
-    }
+    // @include from-xxl {
+    //     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("#{$img-path}/hero-xl.jpg");
+    // }
 }
 
 // ("../../public/images/content/hero-sm.jpg");
